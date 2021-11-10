@@ -17,7 +17,7 @@ if ! which docker-php-ext-configure >/dev/null || ! which docker-php-ext-enable 
 	exit 1
 fi
 
-IPE_VERSION=1.4.2
+IPE_VERSION=master
 
 if test "$IPE_VERSION" = master && test "${CI:-}" != true; then
 	cat <<EOF
